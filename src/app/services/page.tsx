@@ -3,6 +3,7 @@
 import { useLanguage } from '../contexts/LanguageContext';
 import Image from 'next/image';
 import Link from 'next/link';
+import Testimonials from '../components/Testimonials';
 
 export default function ServicesPage() {
   const { t } = useLanguage();
@@ -22,7 +23,29 @@ export default function ServicesPage() {
       {/* Services Grid */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                        
+            {/* Production Service */}
+            <div className="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
+              <figure className="px-6 pt-6">
+                <Image
+                  src="/img/production_temp.jpg"
+                  alt="Music Production"
+                  width={600}
+                  height={300}
+                  className="rounded-xl object-cover h-60 w-full"
+                />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title text-2xl">{t.productionTitle}</h2>
+                <p>{t.productionDesc}</p>
+                <div className="mt-4 font-semibold text-primary">
+                  {t.productionPrice}
+                </div>
+                
+              </div>
+            </div>
             
             {/* Mixing Service */}
             <div className="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
@@ -63,29 +86,12 @@ export default function ServicesPage() {
                 </div>
               </div>
             </div>
-            
-            {/* Production Service */}
-            <div className="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
-              <figure className="px-6 pt-6">
-                <Image
-                  src="/img/production_temp.jpg"
-                  alt="Music Production"
-                  width={600}
-                  height={300}
-                  className="rounded-xl object-cover h-60 w-full"
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title text-2xl">{t.productionTitle}</h2>
-                <p>{t.productionDesc}</p>
-                <div className="mt-4 font-semibold text-primary">
-                  {t.productionPrice}
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
+
+      <Testimonials />
       
       {/* Call to Action */}
       <section className="py-16 bg-base-200">
