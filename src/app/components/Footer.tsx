@@ -15,16 +15,16 @@ export default function Footer() {
           
           {/* Column 1: About */}
           <div>
-            <h3 className="font-bold text-lg mb-4">{t.aboutMe}</h3>
-            <p className="text-base-content/80">
+            <h3 className="font-bold text-lg mb-4 font-heading">{t.aboutMe}</h3>
+            <p className="text-base-content/80 font-inter">
               {t.aboutMeText}
             </p>
           </div>
           
           {/* Column 2: Quick Links */}
           <div>
-            <h3 className="font-bold text-lg mb-4">{t.quickLinks}</h3>
-            <ul className="space-y-2">
+            <h3 className="font-bold text-lg mb-4 font-heading">{t.quickLinks}</h3>
+            <ul className="space-y-2 font-inter">
               <li><Link href="/services" className="hover:text-primary transition-colors">{t.services}</Link></li>
               <li><Link href="/portfolio" className="hover:text-primary transition-colors">{t.portfolio}</Link></li>
               <li><Link href="/about" className="hover:text-primary transition-colors">{t.about}</Link></li>
@@ -34,8 +34,8 @@ export default function Footer() {
           
           {/* Column 3: Connect */}
           <div>
-            <h3 className="font-bold text-lg mb-4">{t.connect}</h3>
-            <p className="mb-4">
+            <h3 className="font-bold text-lg mb-4 font-heading">{t.connect}</h3>
+            <p className="mb-4 font-inter">
               <a href="mailto:hannsal@outlook.com" className="hover:text-primary transition-colors">
                 hannsal@outlook.com
               </a>
@@ -64,7 +64,7 @@ export default function Footer() {
         
         {/* Bottom copyright */}
         <div className="border-t border-base-300 pt-6 mt-8 text-center text-sm text-base-content/70">
-          <p>© {currentYear} Hannu Salo. All rights reserved.</p>
+          <p className='font-inter'>© {currentYear} Hannu Salo. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -9,18 +9,18 @@ export default function LanguageSwitcher() {
         {language === 'en' ? '🇬🇧 EN' : '🇫🇮 FI'}
       </div>
       <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-36">
-        <li>
+        <li className='font-inter'>
           <button 
             onClick={() => setLanguage('en')} 
-            className={language === 'en' ? 'active font-bold' : ''}
+            className={language === 'en' ? 'active font-bold font-inter' : 'font-inter'}
           >
             🇬🇧 English
           </button>
         </li>
-        <li>
+        <li className='font-inter'>
           <button 
             onClick={() => setLanguage('fi')} 
-            className={language === 'fi' ? 'active font-bold' : ''}
+            className={language === 'fi' ? 'active font-bold font-inter' : 'font-inter'}
           >
             🇫🇮 Suomi
           </button>

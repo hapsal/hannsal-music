@@ -40,3 +40,12 @@
   --depth: 1;
   --noise: 0;
 }
+
+@theme inline {
+  --font-heading: var(--font-montserrat);
+  --font-inter: var(--font-inter);
+}
+
+option {
+  font-family: 'Inter', sans-serif;
+}

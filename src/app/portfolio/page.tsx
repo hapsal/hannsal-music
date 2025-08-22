@@ -20,8 +20,8 @@ export default function PortfolioPage() {
       {/* Header Section */}
       <section className="bg-gradient-to-b from-primary/10 to-base-100 py-16">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.portfolioTitle}</h1>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-80">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 font-heading text-primary">{t.portfolioTitle}</h1>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-80 font-inter">
             {t.portfolioSubtitle}
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function PortfolioPage() {
       
       {/* Filter Buttons */}
       <section className="py-8 bg-base-100">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4 font-inter">
           <div className="flex flex-wrap justify-center gap-2">
             <button 
               onClick={() => setFilter('all')}
@@ -80,13 +80,13 @@ export default function PortfolioPage() {
                   />
                 </figure>
                 <div className="card-body">
-                  <h2 className="card-title">{project.title}</h2>
-                  <p className="text-base-content/70">{project.artist}</p>
-                  <p>{project.description[language as 'en' | 'fi']}</p>
+                  <h2 className="card-title font-heading">{project.title}</h2>
+                  <p className="text-base-content/70 font-inter">{project.artist}</p>
+                  <p className='font-inter'>{project.description[language as 'en' | 'fi']}</p>
                   <div className="card-actions justify-end mt-4">
                     <Link 
                       href={`/portfolio/${project.id}`} 
-                      className="btn btn-primary"
+                      className="btn btn-primary font-inter"
                     >
                       {t.projectDetails}
                     </Link>

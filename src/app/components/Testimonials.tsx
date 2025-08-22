@@ -26,7 +26,7 @@ export default function Testimonials() {
   return (
     <section className="py-20 bg-base-200">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-heading">
           {t.testimonialsTitle}
         </h2>
         
@@ -46,7 +46,7 @@ export default function Testimonials() {
                         </svg>
                       </div>
                       
-                      <p className="text-lg mb-6 italic">"{testimonial.text}"</p>
+                      <p className="text-lg mb-6 italic font-inter">"{testimonial.text}"</p>
                       
                       <div className="flex items-center">
                         <div className="avatar">
@@ -61,8 +61,8 @@ export default function Testimonials() {
                           </div>
                         </div>
                         <div className="ml-4 text-left">
-                          <p className="font-bold">{testimonial.name}</p>
-                          <p className="text-sm opacity-70">{testimonial.role}</p>
+                          <p className="font-bold font-inter">{testimonial.name}</p>
+                          <p className="text-sm opacity-70 font-inter">{testimonial.role}</p>
                         </div>
                       </div>
                     </div>

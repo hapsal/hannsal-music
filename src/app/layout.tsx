@@ -1,19 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { LanguageProvider } from './contexts/LanguageContext';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fontMontserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
+  display: 'swap'
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const fontInter= Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: 'swap'
 });
+
 
 export const metadata: Metadata = {
   title: "Hannu Salo | Music Producer & Mixing Engineer",
@@ -26,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="night">
+    <html lang="en" data-theme="night" className={`${fontMontserrat.variable} ${fontInter.variable}`}>
       <LanguageProvider>
         <body className="flex flex-col min-h-screen">
           <Navbar />
