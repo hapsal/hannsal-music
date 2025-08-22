@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="night" className={`${fontMontserrat.variable} ${fontInter.variable}`}>
+    <html lang="fi" data-theme="night" className={`${fontMontserrat.variable} ${fontInter.variable}`}>
       <LanguageProvider>
         <body className="flex flex-col min-h-screen">
           <Navbar />

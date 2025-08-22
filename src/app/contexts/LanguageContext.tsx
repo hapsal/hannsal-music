@@ -12,13 +12,13 @@ type LanguageContextType = {
 };
 
 const LanguageContext = createContext<LanguageContextType>({
-  language: 'en',
+  language: 'fi',
   setLanguage: () => {},
-  t: translations.en,
+  t: translations.fi,
 });
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('fi');
   
   // Load saved language preference on initial render
   useEffect(() => {
