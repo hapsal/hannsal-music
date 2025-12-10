@@ -212,7 +212,7 @@ export const translations = {
         aboutTitle: "Tietoa Minusta",
         aboutSubtitle: "Miksaaja, tuottaja ja muusikko Suomesta",
         myStory: "Tarinani",
-        myStoryContent: "Monen vuoden kokemuksella musiikkialalla olen saanut työskennellä lukuisten eri tyylilajien artistien kanssa. Matkani alkoi kitaristina paikallisissa bändeissä, mikä lopulta johti minut löytämään intohimoni äänisuunnitteluun ja tuotantoon. Opiskeltuani äänitekniikkaa [Koulusi], perustin oman studioni, jossa olen siitä lähtien auttanut artisteja toteuttamaan visioitaan.",
+        myStoryContent: "Monen vuoden kokemuksella musiikkialalla olen saanut työskennellä lukuisten eri tyylilajien artistien kanssa. Matkani alkoi kosketinsoittimesta ja kitarasta, mikä lopulta johti minut löytämään intohimoni äänisuunnitteluun ja tuotantoon. Opiskeltuani Turun konservatoriossa, perustin oman studioni, jossa olen siitä lähtien auttanut artisteja toteuttamaan visioitaan.",
         myApproach: "Lähestymistapani",
         myApproachContent: "Uskon, että jokainen projekti ansaitsee ainutlaatuisen lähestymistavan. Sen sijaan, että soveltaisin samaa kaavaa jokaiseen miksaukseen, käytän aikaa artistin vision ja jokaisen kappaleen tunneytimen ymmärtämiseen. Tavoitteeni on korostaa sitä, mikä tekee musiikistasi erityistä, ei pakottaa omaa tunnusomaista soundiani. Etsitpä sitten radiokelpoista kiiltoa tai raakaa autenttisuutta, työskentelen läheisesti kanssasi täydellisen lopputuloksen saavuttamiseksi.",
         getInTouch: "Ota Yhteyttä",

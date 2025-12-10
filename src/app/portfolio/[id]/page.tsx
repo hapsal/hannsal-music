@@ -75,10 +75,13 @@ export default function ProjectPage() {
             {/* Spotify Embed */}
             <div>
               <div className="sticky top-24">
-                <SpotifyEmbed 
-                  spotifyId={project.spotifyId} 
-                  spotifyType={project.spotifyType} 
-                />
+              <SpotifyEmbed 
+                spotifyId={project.spotifyId}
+                spotifyType="track" 
+                title="Lost in furr"
+                artist="HANNSAL"
+                imageUrl="/img/lost.jpg"
+              />
                 
                 <div className="mt-8 relative h-64 rounded-lg overflow-hidden shadow-lg">
                   <Image

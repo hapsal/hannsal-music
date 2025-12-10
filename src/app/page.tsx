@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLanguage } from './contexts/LanguageContext';
+import AudioPlayer from './components/AudioPlayer';
 
 export default function Home() {
   const { t } = useLanguage();
@@ -42,9 +43,16 @@ export default function Home() {
 
       <section className="py-12">
         <h2 className="text-3xl text-center mb-8 font-heading">{t.featured}</h2>
-        {/* <AudioPlayer url="/audio/featured-track.mp3" /> */}
-        {/* More content here */}
-      </section>
+          <AudioPlayer 
+            url="/audio/featured-track.mp3" 
+            title="New Lives"
+            artist="HANNSAL"
+            coverArt="/img/temp_song.jpg"  // Optional: Add album artwork
+          />
+          <div className="text-center mt-4">
+            <p className="text-sm opacity-75">Kuuntele viimeisin julkaisuni</p>
+          </div>
+        </section>
     </>
   );
 }

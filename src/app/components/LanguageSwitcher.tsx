@@ -9,8 +9,8 @@ export default function LanguageSwitcher() {
       <div tabIndex={0} role="button" className="btn btn-ghost btn-sm">
       <Image src={language === 'fi' ? '/img/fi.svg' : '/img/gb.svg'} 
                     alt={language === 'fi' ? 'Finnish' : 'English'}
-                    width={20}
-                    height={20}
+                    width={10}
+                    height={10}
                     className="object-cover"
               />
          {language === 'fi' ? 'FI' : 'EN'}
@@ -22,7 +22,7 @@ export default function LanguageSwitcher() {
             className={language === 'fi' ? 'active font-bold font-inter' : 'font-inter'}
           >
              <Image src={`/img/fi.svg`} 
-                    alt="Finnish flag"
+                    alt="Finnish"
                     width={20}
                     height={20}
                     className="object-cover"
@@ -36,7 +36,7 @@ export default function LanguageSwitcher() {
             className={language === 'en' ? 'active font-bold font-inter' : 'font-inter'}
           >
                <Image  src={`/img/gb.svg`} 
-                        alt="English flag"
+                        alt="English"
                         width={20}
                         height={20}
                         className="object-cover"
